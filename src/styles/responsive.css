@@ -1,0 +1,278 @@
+@media (max-width: 1440px) {
+}
+
+@media all and (min-width: 992px) {
+  /* .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  } */
+}
+
+/* laptop */
+@media (max-width: 1024px) {
+  .dept-cards {
+    height: 220px;
+  }
+  .h1responsive {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .h2responsive {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .H3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .H4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .H5 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .H6 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .performance-card h4 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .customer-slider {
+    height: 300px;
+  }
+  .group-img {
+    height: 400px;
+  }
+}
+@media (max-width: 991px) {
+  .nav-style {
+    margin-bottom: 1rem !important;
+    height: fit-content;
+  }
+  .mob-nav {
+    background: #d0cfcf;
+  }
+  .sticky-nav {
+    display: none;
+  }
+  .dropdown-menu[data-bs-popper] {
+    position: absolute;
+    left: -100px !important;
+  }
+  .arrow-btn {
+    top: 0px;
+  }
+}
+
+/* tab */
+@media (max-width: 768px) {
+  .dept-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .group-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .group-img {
+    height: 400px;
+  }
+  .team-slider {
+    padding: 1.7rem 0;
+    margin-top: 2rem;
+  }
+  .h2responsive {
+    font-size: 23px;
+    line-height: 28px;
+  }
+  .team-slider h3 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .performance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .customer-slider {
+    height: 250px;
+  }
+  .performance-sec {
+    padding: 3rem 0;
+  }
+  .customer-sec {
+    background: #2a2a2a;
+    padding: 3.5rem 0;
+    color: #ffffff;
+  }
+  .testimonial-sec {
+    padding: 3.5rem 0;
+  }
+  .testimonial-slider {
+    margin-top: 2rem;
+  }
+  .footer-heading-sec {
+    padding: 6rem 0;
+  }
+  .investor-sec {
+    padding: 3.5rem 0;
+  }
+  .investor-card {
+    height: 200px;
+  }
+  .team-icon {
+    width: 144px;
+    height: 144px;
+  }
+
+
+  .img-card {
+    height: 300px;
+  }
+  .benefits-sec {
+    padding: 2rem 0;
+  }
+  .timeline-box span {
+    font-size: 10px;
+    width: 90px;
+  }
+  .working-sec {
+    padding: 3.5rem 0;
+  }
+  .working-container {
+    height: 300px;
+  }
+  .case-studies-sec {
+    padding: 3.5rem 0;
+  }
+  .business-sec {
+    padding: 3rem 0;
+  }
+  .req-demo-sec {
+    padding: 3rem 0;
+  }
+}
+/* mobile */
+@media (max-width: 605px) {
+  .department-sec {
+    padding: 1.5rem 0;
+  }
+  .dept-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .group-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .group-img {
+    height: 300px;
+  }
+  .req-form input,
+  .req-form textarea {
+    width: 100%;
+  }
+  .case-hero-sec {
+    height: 60vh;
+  }
+  .level-percentage {
+    padding: 0.5rem;
+    top: 35%;
+    left: -10%;
+    font-size: 10px;
+    line-height: 14px;
+    border-radius: 10px;
+  }
+  .level-percentage::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    bottom: -8px;
+    left: 72%;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+  .timeline-box {
+    min-width: 700px;
+    width: 100%;
+  }
+  .overflow-style {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .mining-sec {
+    padding: 2rem 0;
+  }
+  .page-heading-sec {
+    padding: 3rem 0;
+  }
+
+
+  .case-slider-item {
+    width: 100%;
+    height: 30vh;
+    background: #296CEF;
+  }
+
+  .vision-mission-sec {
+    padding: 1.5rem 0;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .performance-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .h1responsive {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .h2responsive {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .performance-sec {
+    padding: 1.5rem 0;
+  }
+  .custom-container {
+    width: 85%;
+  }
+  .footer-heading-sec {
+    padding: 3rem 0;
+  }
+  .H6 {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .dept-cards {
+    height: 180px;
+  }
+}
+@media (max-width: 375px) {
+  .group-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .h1responsive {
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .h2responsive {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .level-1 {
+    left: 10px;
+    bottom: -25px;
+  }
+  .level-3 {
+    right: 6px;
+    bottom: -25px;
+  }
+}
