@@ -21,11 +21,11 @@ const Benefits = () => {
     { icon: DeliveryTime, title: "Reduced Cycle Time" },
     { icon: FuelGas, title: "Increased Fuel Efficiency" },
     { icon: SlipperyFloor, title: "Reduced Errors and Accidents" },
-    { icon: Error, title: "Reduced Errors and Accidents" },
     {
       icon: DevelopmentSkill,
       title: "Reduced Training time and employee turnover rate",
     },
+    { icon: Error, title: "Reduced Errors and Accidents" },
   ];
   const cardItems = cards.map((card, i) => (
     <div className="col-md px-lg-1 icon-box">
