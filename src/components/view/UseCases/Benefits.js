@@ -1,47 +1,60 @@
 import React from "react";
+import Increase from "../../../assets/icons/Increase.svg";
+import DeliveryTime from "../../../assets/icons/DeliveryTime.svg";
+import DevelopmentSkill from "../../../assets/icons/DevelopmentSkill.svg";
+import Error from "../../../assets/icons/Error.svg";
+import FuelGas from "../../../assets/icons/FuelGas.svg";
+import SlipperyFloor from "../../../assets/icons/SlipperyFloor.svg";
+import Slider from "react-slick";
 
 const Benefits = () => {
+  const settings = {
+    // dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+  const cards = [
+    { icon: Increase, title: "Productivity Improvement" },
+    { icon: DeliveryTime, title: "Reduced Cycle Time" },
+    { icon: FuelGas, title: "Increased Fuel Efficiency" },
+    { icon: SlipperyFloor, title: "Reduced Errors and Accidents" },
+    {
+      icon: DevelopmentSkill,
+      title: "Reduced Training time and employee turnover rate",
+    },
+    { icon: Error, title: "Reduced Errors and Accidents" },
+  ];
+  const cardItems = cards.map((card, i) => (
+    <div className="icon-box">
+      <div className="card-icon">
+        <img key={i} src={card.icon} alt="" className="" />
+      </div>
+      <p key={i}>{card.title}</p>
+    </div>
+  ));
   return (
     <section className="benefits-sec">
       <div className="custom-container">
-        <h2 className="H2 pb-lg-4 pb-0" style={{fontSize:"32px"}}>Benefits</h2>
+        <h2 className="H2 pb-lg-4 pb-0" style={{ fontSize: "32px" }}>
+          Benefits
+        </h2>
 
-        <div className="row mx-0 g-4 text-center pt-5">
-          <div className="col-md-3 px-lg-1">
-            <img
-              src="/images/useCases/card.svg"
-              alt=""
-              className="img-fluid "
-            />
-          </div>
-          <div className="col-md-3 px-lg-1">
-            <img
-              src="/images/useCases/card2.svg"
-              alt=""
-              className="img-fluid "
-            />
-          </div>
-          <div className="col-md-3 pt-5  my-auto">
-            <img
-              src="/images/useCases/card3.svg"
-              alt=""
-              className="img-fluid "
-            />
-          </div>
-          <div className="col-md-3 pt-4 my-auto">
-            <img
-              src="/images/useCases/card4.svg"
-              alt=""
-              className="img-fluid "
-            />
-          </div>
+        <div className="">
+          <Slider {...settings}>{cardItems}</Slider>
         </div>
 
         <div className="overflow-style">
           <div className="timeline-box ">
             <ol>
               <li>
-                <span style={{color:'#4E85F0'}}>Productivity Improvement</span>
+                <span style={{ color: "#4E85F0" }}>
+                  Productivity Improvement
+                </span>
               </li>
               <li>
                 <span>Reduced Cycle Time</span>

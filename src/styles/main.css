@@ -45,11 +45,11 @@ a:hover {
 }
 
 .custom-team {
-  width:100%;
+  width: 100%;
   margin: 0 auto;
 }
 
-.custom-containerk{
+.custom-containerk {
   width: 100%;
   margin: 0 0;
 }
@@ -171,25 +171,60 @@ a:hover {
 }
 .performance-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  padding: 3rem 0;
+  grid-template-columns: 70% 30%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
-.performance-card {
-  box-shadow: 0px 4px 15px rgba(102, 102, 102, 0.1);
-  border-radius: 10px;
-  padding: 1.5rem;
+.performance-circle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid #000000;
 }
-.performance-card h4 {
+.performance-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #000000;
+  padding: 1rem;
+  gap: 10px;
+}
+.performance-box .percentage {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.performance-box .percentage h4 {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 68px;
-  padding: 0.8rem;
+  font-size: 25px;
+  text-align: center;
+  color: #4e85f0;
+  margin: 0;
 }
-.performance-card h5 {
-  color: var(--text-secondary);
+.performance-box .title h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+  color: #555555;
+  margin: 0;
 }
+.performance-box .title h5 a {
+  font-weight: 700;
+  text-align: center;
+  color: #4e85f0;
+  text-decoration: none;
+}
+
 .customer-sec {
   background: #2a2a2a;
   padding: 6rem 0;
@@ -247,7 +282,6 @@ a:hover {
   padding: 2.5rem 1rem;
   margin-top: 4rem;
 }
-
 
 .testimonial-slider small {
   font-style: normal;
@@ -365,6 +399,43 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
+/* Benefits Sectio */
+
+.card-icon {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #5b5b5b;
+  margin-bottom: 1rem !important;
+  margin-right: 0 !important;
+}
+.card-icon img {
+  height: 40px;
+  width: 40px;
+}
+.icon-box {
+  /* display: flex !important;
+  gap: 10px;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column; */
+  /* border: 1px solid; */
+  margin: auto;
+  width: 200px !important;
+}
+.icon-box p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
 .benefits-sec {
   background: #2a2a2a;
   padding: 4rem 0;
@@ -456,7 +527,7 @@ a:hover {
 .case-slider-item {
   width: 100%;
   height: 90vh;
-  background: #296CEF;
+  background: #296cef;
 }
 .case-hero-sec {
   background: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
