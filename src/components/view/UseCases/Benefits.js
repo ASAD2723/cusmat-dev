@@ -9,12 +9,14 @@ import Slider from "react-slick";
 
 const Benefits = () => {
   const settings = {
-    className: "center",
-    centerMode: true,
+    // dots: true,
     infinite: true,
-    centerPadding: "60px",
     slidesToShow: 4,
-    speed: 500,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
   };
   const cards = [
     { icon: Increase, title: "Productivity Improvement" },
@@ -28,9 +30,9 @@ const Benefits = () => {
     { icon: Error, title: "Reduced Errors and Accidents" },
   ];
   const cardItems = cards.map((card, i) => (
-    <div className="col-md px-lg-1 icon-box">
+    <div className="icon-box">
       <div className="card-icon">
-        <img key={i} src={card.icon} alt="" className="img-fluid " />
+        <img key={i} src={card.icon} alt="" className="" />
       </div>
       <p key={i}>{card.title}</p>
     </div>
@@ -42,7 +44,7 @@ const Benefits = () => {
           Benefits
         </h2>
 
-        <div className="row">
+        <div className="">
           <Slider {...settings}>{cardItems}</Slider>
         </div>
 
