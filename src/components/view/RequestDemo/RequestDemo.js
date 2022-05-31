@@ -1,22 +1,33 @@
-import React, { useEffect } from 'react'
+import React, { useRef } from 'react'
+import emailjs from 'emailjs-com';
 import Navbar from '../../layout/Navbar'
 import WCTAFooter from '../../layout/WCTAFooter'
 
 const RequestDemo = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs.sendForm('service_jahst6b', 'template_mqsxwda', e.target, 'p2rap_OLFYhYH_8xr')
+			.then((result) => {
+				console.log(result.text);
+			}, (error) => {
+				console.log(error.text);
+			});
+			e.target.reset()
+	}
 
 	return (
 		<>
 			<Navbar />
 			<section className="req-demo-sec custom-container">
-				<h1 className="H1" style={{fontSize: "50px"}}>Experience the CUSMAT Metaverse</h1>
-				<h2 className="H2 py-4" style={{fontSize: "32px"}}>Request Demo</h2>
-				<form action="" className="req-form">
+				<h1 className="H1" style={{ fontSize: "50px" }}>Experience the CUSMAT Metaverse</h1>
+				<h2 className="H2 py-4" style={{ fontSize: "32px" }}>Request Demo</h2>
+				<form action="" ref={form} className="req-form" onSubmit={sendEmail}>
 					<div className="row mx-0 gx-5 gy-4 ">
 						<div className="col-lg-3 col-md-4 p-0">
-							<select name="cars" id="cars" className="w-100">
+							<select name="industry" id="industry" className="w-100">
 								<option value="Select Industry">Select Industry*</option>
 								<option value="Mining">Mining</option>
 								<option value="Logisticsandwarehousing">Logistics And Warehousing</option>
@@ -29,21 +40,21 @@ const RequestDemo = () => {
 
 					<div className="row mx-0 gx-5 gy-4">
 						<div className="col-md-4  p-0">
-							<input type="text" name="" id="" placeholder="Enter Name*" />
+							<input type="text" name="name" id="" placeholder="Enter Name*" />
 						</div>
 						<div className="col-md-4  p-0">
-							<input type="text" name="" id="" placeholder="Enter Phone Number*" required />
+							<input type="text" name="phoneno" id="" placeholder="Enter Phone Number*" required />
 						</div>
 						<div className="col-md-4  p-0">
-							<input type="email" name="" id="" placeholder="Enter Email ID*" required />
+							<input type="email" name="email" id="" placeholder="Enter Email ID*" required />
 						</div>
 						<div className="col-md-4  p-0">
-							<input type="text" name="" id="" placeholder="Enter Company Name*" required />
+							<input type="text" name="company" id="" placeholder="Enter Company Name*" required />
 						</div>
 						<div className="col-md-4  p-0">
 							<input
 								type="text"
-								name=""
+								name="employees"
 								id=""
 								placeholder="Enter Number of Employees"
 								required
@@ -54,7 +65,7 @@ const RequestDemo = () => {
 					<div className="py-4">
 						<h4 className="H4">How can we help you?</h4>
 						<textarea
-							name=""
+							name="subject"
 							id=""
 							rows="5"
 							placeholder="Type here"
@@ -64,7 +75,7 @@ const RequestDemo = () => {
 					</div>
 					<br />
 					<div>
-						<button className="custom-btn H6">Get In Touch ⟶</button>
+						<button type='submit' value="Send" className="custom-btn H6">Get In Touch ⟶</button>
 					</div>
 				</form>
 				<div className="req-demo-sec">

@@ -57,9 +57,9 @@ const WorkForcePerformance = () => {
               </div>
             ))}
           </div>
-          <h2 className="H2" style={{textAlign:"center", fontSize: "32px" }}>
+          <h1 className="H2" style={{textAlign:"center", fontSize: "30px", color:"black"}}>
             Impacting Metrics that Matter
-          </h2>
+          </h1>
         </div>
       </div>
     </section>
