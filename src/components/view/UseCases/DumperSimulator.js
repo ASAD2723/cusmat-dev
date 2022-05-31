@@ -5,6 +5,7 @@ import PageHeading from './PageHeading'
 import Working from './Working'
 import Slider from "react-slick";
 import Footer from "../../layout/Footer";
+import AnalyticsDashboard from "./AnalyticsDashboard";
 
 
 const DumperSimulator = () => {
@@ -111,6 +112,7 @@ const DumperSimulator = () => {
 
 				</section>
 				<Benefits />
+				<AnalyticsDashboard/>
 				<section className="custom-container working-sec">
 					<h2 className="H2 pb-lg-5 pb-3" style={{ fontSize: "32px" }}></h2>
 					<div className="working-container pb-3">

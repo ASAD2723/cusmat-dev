@@ -41,7 +41,6 @@ a:hover {
 .custom-container {
   width: 80%;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 .custom-team {
@@ -166,20 +165,25 @@ a:hover {
   left: 0;
   transform: translateY(-40%);
 }
-.performance-sec {
+.performance-container {
+  background-color: #2a2a2a;
   padding: 5rem 0;
 }
+.performance-sec {
+  /* background-color: #ffffff; */
+}
 .performance-grid {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  gap: 1rem;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #2a2a2a;
 }
 .performance-circle {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid #000000;
+  background-color: #ffffff;
 }
 .performance-box {
   display: flex;
@@ -223,6 +227,22 @@ a:hover {
   text-align: center;
   color: #4e85f0;
   text-decoration: none;
+}
+.metrics {
+  background: #ffffff;
+  height: 345px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.metrics h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px !important;
+  text-align: center !important;
+  color: #000000;
+  margin: 0;
 }
 
 .customer-sec {
@@ -790,3 +810,18 @@ a:hover {
   color: #f9f9f9;
 }
 /* ========Footer end ========= */
+
+/* #Dumper Section */
+.Analytics-Dashboard {
+  padding-top: 2rem;
+}
+.analytic-wrapper {
+  display: flex;
+  padding: 1rem 3rem;
+}
+.analytic-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
