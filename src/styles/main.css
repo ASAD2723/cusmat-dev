@@ -884,3 +884,6 @@ a:hover {
   font-size: 18px;
   color: #296cef;
 }
+.slick-track{
+  height: 0 !important;
+}
