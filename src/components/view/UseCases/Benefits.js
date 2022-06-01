@@ -30,7 +30,7 @@ const Benefits = () => {
     { icon: Error, title: "Reduced Errors and Accidents" },
   ];
   const cardItems = cards.map((card, i) => (
-    <div className="icon-box">
+    <div key={i} className="icon-box">
       <div className="card-icon">
         <img key={i} src={card.icon} alt="" className="" />
       </div>
